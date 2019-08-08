@@ -35,3 +35,4 @@ This repo holds the first ten Java labs for Code Fellows 401.
 ### Resources
 * https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html
 * https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html
+* https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
