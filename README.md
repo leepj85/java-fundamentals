@@ -22,3 +22,16 @@ This repo holds the first ten Java labs for Code Fellows 401.
 ### Resources
 * https://stackoverflow.com/questions/3457941/using-assertarrayequals-in-unit-tests
 * https://stackoverflow.com/questions/7554281/junit-assertions-make-the-assertion-between-floats
+
+## Lab 3: Maps, File I/O, and Testing
+### List of Methods
+**basicslibrary**
+* analyzeWeatherData
+* tallyElection
+
+**linter**
+* jSLinter
+
+### Resources
+* https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html
+* https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html
