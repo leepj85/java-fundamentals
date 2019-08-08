@@ -3,7 +3,7 @@
  */
 package basiclibrary;
 
-import java.util.Arrays;
+import java.util.*;
 
 import static java.lang.Math.random;
 
@@ -68,5 +68,58 @@ public class Library {
         }
         return input[index];
     }
+
+    public static String analyzeWeatherData() {
+        String results;
+        // Daily average temperatures for Seattle, October 1-28 2017
+        int[][] weeklyMonthTemperatures = {
+                {66, 64, 58, 65, 71, 57, 60},
+                {57, 65, 65, 70, 72, 65, 51},
+                {55, 54, 60, 53, 59, 57, 61},
+                {65, 56, 55, 52, 55, 62, 57}
+        };
+        Set<Integer> temperatures = new HashSet<>();
+        int minTemp = 1000;
+        int maxTemp = 0;
+        for (int[] tempArr : weeklyMonthTemperatures) {
+            for (int temp : tempArr) {
+                if (temp < minTemp) {
+                    minTemp = temp;
+                }
+                maxTemp = (temp > maxTemp) ? temp : maxTemp;
+                temperatures.add(temp);
+            }
+        }
+        results = "High: " + maxTemp + '\n' + "Low: " + minTemp;
+        for (int i = minTemp + 1; i < maxTemp; i++) {
+            if (!temperatures.contains(i)) {
+                results += '\n' + "Never saw temperature: " + i;
+            }
+        }
+//        System.out.println("here is the results: " + '\n' + results);
+        return results;
+    }
+
+    public static String tallyElection(List<String> votes) {
+        Map<String, Integer> counterMap = new HashMap<>();
+        for (String e : votes) {
+            if (!counterMap.containsKey(e)) {
+                counterMap.put(e, 1);
+            } else {
+                counterMap.put(e, counterMap.get(e) + 1);
+            }
+        }
+        String winner = "";
+        int totalVotes = 0;
+        for (String key : counterMap.keySet()) {
+            if (counterMap.get(key) > totalVotes) {
+                winner = key;
+                totalVotes = counterMap.get(key);
+            }
+        }
+//        System.out.println("THIS IF THE WINNER: " + winner);
+        return winner + " received the most votes!";
+    }
+
 
 }
