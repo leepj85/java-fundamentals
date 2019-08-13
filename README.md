@@ -36,3 +36,20 @@ This repo holds the first ten Java labs for Code Fellows 401.
 * https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html
 * https://docs.oracle.com/javase/8/docs/api/java/util/Scanner.html
 * https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
+
+## Lab 6: Composition and Inheritance, Part 1
+### List of Methods
+**Restaurant**
+* Restaurant
+* addReview
+* updateStarRating
+* toString
+
+**Review**
+* Review
+* toString
+
+### Resources
+* https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
+* https://www.javatpoint.com/java-string-format
+* https://www.yelp.com/biz/din-tai-fung-bellevue-4?frvs=True&osq=Restaurants+-+Reservations
