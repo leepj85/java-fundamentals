@@ -53,3 +53,34 @@ This repo holds the first ten Java labs for Code Fellows 401.
 * https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
 * https://www.javatpoint.com/java-string-format
 * https://www.yelp.com/biz/din-tai-fung-bellevue-4?frvs=True&osq=Restaurants+-+Reservations
+
+## Lab 7: Composition and Inheritance, Part 2
+
+### List of Methods
+**Business**
+* Business(String name, double starRating)
+* addReview(Review review)
+* updateStarRating()
+* getName()
+* getStarRating() 
+* getReviews() 
+* toString()
+
+**Restaurant**
+* Restaurant(String name, String price)
+* toString()
+
+**Shop**
+* Shop(String name, String price, String description)
+* toString()
+
+**Theater**
+* Theater(String name, double starRating)
+* getMovieList()
+* addMovie(String movie)
+* removeMovie(String movie)
+
+**Review**
+* Review(String author, int starRating, String review, Business business)
+* Review(String author, int starRating, String review, Business business, String movie)
+* toString()
