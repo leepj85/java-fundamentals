@@ -84,3 +84,17 @@ This repo holds the first ten Java labs for Code Fellows 401.
 * Review(String author, int starRating, String review, Business business)
 * Review(String author, int starRating, String review, Business business, String movie)
 * toString()
+
+### Lab 9
+### List of Methods
+* getStarWarsQuote(String starWarsUrl)
+* writeToFile(StarWarsQuote q)
+* read(String s)
+* getFileQuote(String filePath)
+
+#### How to Test
+* Check resource 'starwars-quotes.json' is empty and run AppTest.
+* 'starwars-quotes.json' should now have 1 StarWarsQuote json object. 
+* To test local quotes path works, please go into App.java and in Main, modify getStarWarsQuote String argument to result in bad path. 
+  * Then run App and quote will be printed in console. 
+
