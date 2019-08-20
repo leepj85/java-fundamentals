@@ -98,3 +98,12 @@ This repo holds the first ten Java labs for Code Fellows 401.
 * To test local quotes path works, please go into App.java and in Main, modify getStarWarsQuote String argument to result in bad path. 
   * Then run App and quote will be printed in console. 
 
+### Lab 11
+### List of Methods
+* getRoot()
+* getCapitalizedVariable(@PathVariable String variable, Model m)
+* reverse(@RequestParam(required=true) String sentence, Model m)
+* reverseString(String variable)
+
+### How to Test
+* Run HomeControllerTest in 'src/test'to test reverseString method. 
